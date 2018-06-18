@@ -1,0 +1,9 @@
+D:\VSCode Project\Embled\SerialPortUI\SerialPortUI\bin\Debug\SerialPortUI.exe.config
+D:\VSCode Project\Embled\SerialPortUI\SerialPortUI\bin\Debug\SerialPortUI.exe
+D:\VSCode Project\Embled\SerialPortUI\SerialPortUI\bin\Debug\SerialPortUI.pdb
+D:\VSCode Project\Embled\SerialPortUI\SerialPortUI\obj\Debug\SerialPortUI.csprojResolveAssemblyReference.cache
+D:\VSCode Project\Embled\SerialPortUI\SerialPortUI\obj\Debug\SerialPortUI.Form1.resources
+D:\VSCode Project\Embled\SerialPortUI\SerialPortUI\obj\Debug\SerialPortUI.Properties.Resources.resources
+D:\VSCode Project\Embled\SerialPortUI\SerialPortUI\obj\Debug\SerialPortUI.csproj.GenerateResource.Cache
+D:\VSCode Project\Embled\SerialPortUI\SerialPortUI\obj\Debug\SerialPortUI.exe
+D:\VSCode Project\Embled\SerialPortUI\SerialPortUI\obj\Debug\SerialPortUI.pdb
