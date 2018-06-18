@@ -75,7 +75,7 @@
             // btnConnect
             // 
             this.btnConnect.Location = new System.Drawing.Point(248, 50);
-            this.btnConnect.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnConnect.Margin = new System.Windows.Forms.Padding(2);
             this.btnConnect.Name = "btnConnect";
             this.btnConnect.Size = new System.Drawing.Size(72, 18);
             this.btnConnect.TabIndex = 1;
@@ -86,25 +86,27 @@
             // tbCOMPort
             // 
             this.tbCOMPort.Location = new System.Drawing.Point(98, 14);
-            this.tbCOMPort.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbCOMPort.Margin = new System.Windows.Forms.Padding(2);
             this.tbCOMPort.Name = "tbCOMPort";
             this.tbCOMPort.Size = new System.Drawing.Size(137, 22);
             this.tbCOMPort.TabIndex = 2;
             // 
             // pbMusic
             // 
+            this.pbMusic.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pbMusic.Image = ((System.Drawing.Image)(resources.GetObject("pbMusic.Image")));
             this.pbMusic.Location = new System.Drawing.Point(9, 112);
-            this.pbMusic.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbMusic.Margin = new System.Windows.Forms.Padding(2);
             this.pbMusic.Name = "pbMusic";
             this.pbMusic.Size = new System.Drawing.Size(558, 329);
+            this.pbMusic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbMusic.TabIndex = 3;
             this.pbMusic.TabStop = false;
             // 
             // tbRate
             // 
             this.tbRate.Location = new System.Drawing.Point(98, 50);
-            this.tbRate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbRate.Margin = new System.Windows.Forms.Padding(2);
             this.tbRate.Name = "tbRate";
             this.tbRate.Size = new System.Drawing.Size(137, 22);
             this.tbRate.TabIndex = 5;
@@ -130,7 +132,7 @@
             this.panel1.Controls.Add(this.lbRate);
             this.panel1.Controls.Add(this.tbCOMPort);
             this.panel1.Location = new System.Drawing.Point(2, 10);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(771, 88);
             this.panel1.TabIndex = 6;
@@ -139,7 +141,7 @@
             // 
             this.tbCommand.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.tbCommand.Location = new System.Drawing.Point(514, 37);
-            this.tbCommand.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbCommand.Margin = new System.Windows.Forms.Padding(2);
             this.tbCommand.Name = "tbCommand";
             this.tbCommand.ReadOnly = true;
             this.tbCommand.Size = new System.Drawing.Size(162, 22);
@@ -161,7 +163,7 @@
             // 
             this.pbStop.Image = ((System.Drawing.Image)(resources.GetObject("pbStop.Image")));
             this.pbStop.Location = new System.Drawing.Point(213, 493);
-            this.pbStop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbStop.Margin = new System.Windows.Forms.Padding(2);
             this.pbStop.Name = "pbStop";
             this.pbStop.Size = new System.Drawing.Size(34, 35);
             this.pbStop.TabIndex = 7;
@@ -170,10 +172,9 @@
             // 
             // pbNext
             // 
-            this.pbNext.Image = ((System.Drawing.Image)(resources.GetObject("pbNext.Image")));
             this.pbNext.ImageLocation = "../../Pic/fast-forward.png";
             this.pbNext.Location = new System.Drawing.Point(419, 493);
-            this.pbNext.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbNext.Margin = new System.Windows.Forms.Padding(2);
             this.pbNext.Name = "pbNext";
             this.pbNext.Size = new System.Drawing.Size(34, 35);
             this.pbNext.TabIndex = 8;
@@ -184,7 +185,7 @@
             // 
             this.pbPlayPause.Image = ((System.Drawing.Image)(resources.GetObject("pbPlayPause.Image")));
             this.pbPlayPause.Location = new System.Drawing.Point(335, 477);
-            this.pbPlayPause.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbPlayPause.Margin = new System.Windows.Forms.Padding(2);
             this.pbPlayPause.Name = "pbPlayPause";
             this.pbPlayPause.Size = new System.Drawing.Size(64, 64);
             this.pbPlayPause.TabIndex = 9;
@@ -195,7 +196,7 @@
             // 
             this.pbPrevious.Image = ((System.Drawing.Image)(resources.GetObject("pbPrevious.Image")));
             this.pbPrevious.Location = new System.Drawing.Point(278, 493);
-            this.pbPrevious.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbPrevious.Margin = new System.Windows.Forms.Padding(2);
             this.pbPrevious.Name = "pbPrevious";
             this.pbPrevious.Size = new System.Drawing.Size(34, 35);
             this.pbPrevious.TabIndex = 10;
@@ -205,7 +206,7 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(571, 328);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(202, 113);
@@ -318,7 +319,7 @@
             this.Controls.Add(this.pbStop);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pbMusic);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pbMusic)).EndInit();
