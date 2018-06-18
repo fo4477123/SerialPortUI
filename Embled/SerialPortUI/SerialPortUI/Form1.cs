@@ -64,14 +64,29 @@ namespace SerialPortUI
         public int totalLength = 0;
         private void DisplayText(string inComingData)
         {
-            tbResult.Text += inComingData;
+            switch(inComingData)
+            {
+                case "UP":
+                    break;
+                case "DOWN":
+                    break;
+                case "LEFT":
+                    break;
+                case "RIGHT":
+                    break;
+                case "FAR":
+                    break;
+                case "NEAR":
+                    break;
+                default:
+                    break;
+            }
         }
 
         private void DataReceivedHandler(object sender, SerialDataReceivedEventArgs e)
         {
             
             string recived = (sender as SerialPort).ReadLine();
-            
             Display d = new Display(DisplayText);
             this.Invoke(d, recived);
             
