@@ -39,9 +39,16 @@
             this.lbCommand = new System.Windows.Forms.Label();
             this.tbCommand = new System.Windows.Forms.TextBox();
             this.pbPlay = new System.Windows.Forms.PictureBox();
+            this.pbStop = new System.Windows.Forms.PictureBox();
+            this.pbPrevious = new System.Windows.Forms.PictureBox();
+            this.pbNext = new System.Windows.Forms.PictureBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbMusic)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPlay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbStop)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPrevious)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbNext)).BeginInit();
             this.SuspendLayout();
             // 
             // lbCom
@@ -133,17 +140,56 @@
             // pbPlay
             // 
             this.pbPlay.Image = ((System.Drawing.Image)(resources.GetObject("pbPlay.Image")));
-            this.pbPlay.Location = new System.Drawing.Point(543, 171);
+            this.pbPlay.Location = new System.Drawing.Point(531, 140);
             this.pbPlay.Name = "pbPlay";
-            this.pbPlay.Size = new System.Drawing.Size(100, 50);
+            this.pbPlay.Size = new System.Drawing.Size(46, 44);
             this.pbPlay.TabIndex = 7;
             this.pbPlay.TabStop = false;
+            // 
+            // pbStop
+            // 
+            this.pbStop.Image = ((System.Drawing.Image)(resources.GetObject("pbStop.Image")));
+            this.pbStop.Location = new System.Drawing.Point(531, 219);
+            this.pbStop.Name = "pbStop";
+            this.pbStop.Size = new System.Drawing.Size(46, 44);
+            this.pbStop.TabIndex = 8;
+            this.pbStop.TabStop = false;
+            // 
+            // pbPrevious
+            // 
+            this.pbPrevious.Image = ((System.Drawing.Image)(resources.GetObject("pbPrevious.Image")));
+            this.pbPrevious.Location = new System.Drawing.Point(531, 305);
+            this.pbPrevious.Name = "pbPrevious";
+            this.pbPrevious.Size = new System.Drawing.Size(46, 44);
+            this.pbPrevious.TabIndex = 9;
+            this.pbPrevious.TabStop = false;
+            // 
+            // pbNext
+            // 
+            this.pbNext.Image = ((System.Drawing.Image)(resources.GetObject("pbNext.Image")));
+            this.pbNext.Location = new System.Drawing.Point(531, 397);
+            this.pbNext.Name = "pbNext";
+            this.pbNext.Size = new System.Drawing.Size(46, 44);
+            this.pbNext.TabIndex = 10;
+            this.pbNext.TabStop = false;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(708, 140);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(322, 301);
+            this.textBox1.TabIndex = 11;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1042, 453);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.pbNext);
+            this.Controls.Add(this.pbPrevious);
+            this.Controls.Add(this.pbStop);
             this.Controls.Add(this.pbPlay);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pbMusic);
@@ -153,7 +199,11 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPlay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbStop)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPrevious)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbNext)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -169,6 +219,10 @@
         private System.Windows.Forms.Label lbCommand;
         private System.Windows.Forms.TextBox tbCommand;
         private System.Windows.Forms.PictureBox pbPlay;
+        private System.Windows.Forms.PictureBox pbStop;
+        private System.Windows.Forms.PictureBox pbPrevious;
+        private System.Windows.Forms.PictureBox pbNext;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
