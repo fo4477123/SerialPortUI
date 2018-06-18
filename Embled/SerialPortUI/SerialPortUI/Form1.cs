@@ -22,9 +22,20 @@ namespace SerialPortUI
 
         private void btnConnect_Click(object sender, EventArgs e)
         {
+            if(tbCOMPort.Text == "" || tbCOMPort.Text.Contains("COM"))
+            {
+                MessageBox.Show("Please input the value of COM Port");
+                return;
+            }
+            int Rate = 9600;
+            if(!Int32.TryParse(tbRate.Text,out Rate))
+            {
+                MessageBox.Show("Please input correct format bault rate");
+                return;
+            }
 
-            serialPort = new SerialPort("COM5");
-            serialPort.BaudRate = 9600;
+            serialPort = new SerialPort(tbCOMPort.Text.Trim());
+            serialPort.BaudRate = Rate ;
             serialPort.Parity = Parity.None;
             serialPort.StopBits = StopBits.One;
             serialPort.DataBits = 8;
@@ -37,6 +48,8 @@ namespace SerialPortUI
                     serialPort.Close();
                     btnConnect.Text = "Connect";
                     isConnected = false;
+                    tbRate.Enabled = true;
+                    tbCOMPort.Enabled = true;
                     return;
                 }
                 serialPort.DataReceived += new SerialDataReceivedEventHandler(DataReceivedHandler);
@@ -44,6 +57,8 @@ namespace SerialPortUI
                 {
                     serialPort.Open();
                     isConnected = true;
+                    tbRate.Enabled = false;
+                    tbCOMPort.Enabled = false;
                     btnConnect.Text = "Disconnect";
                 }
                
@@ -64,9 +79,12 @@ namespace SerialPortUI
         public int totalLength = 0;
         private void DisplayText(string inComingData)
         {
+            tbCommand.Text = "";
             switch(inComingData)
             {
                 case "UP":
+                    //Show the in coming command for user
+                    tbCommand.Text = "Play List";
                     break;
                 case "DOWN":
                     break;
@@ -84,12 +102,16 @@ namespace SerialPortUI
         }
 
         private void DataReceivedHandler(object sender, SerialDataReceivedEventArgs e)
-        {
-            
+        {   
             string recived = (sender as SerialPort).ReadLine();
             Display d = new Display(DisplayText);
             this.Invoke(d, recived);
             
+        }
+
+        private void lbCommand_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
