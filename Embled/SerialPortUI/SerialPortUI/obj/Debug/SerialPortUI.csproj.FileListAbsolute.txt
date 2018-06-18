@@ -7,3 +7,15 @@ D:\VSCode Project\Embled\SerialPortUI\SerialPortUI\obj\Debug\SerialPortUI.Proper
 D:\VSCode Project\Embled\SerialPortUI\SerialPortUI\obj\Debug\SerialPortUI.csproj.GenerateResource.Cache
 D:\VSCode Project\Embled\SerialPortUI\SerialPortUI\obj\Debug\SerialPortUI.exe
 D:\VSCode Project\Embled\SerialPortUI\SerialPortUI\obj\Debug\SerialPortUI.pdb
+C:\Users\Tony\Documents\SerialPortUI\Embled\SerialPortUI\SerialPortUI\bin\Debug\SerialPortUI.exe.config
+C:\Users\Tony\Documents\SerialPortUI\Embled\SerialPortUI\SerialPortUI\bin\Debug\SerialPortUI.exe
+C:\Users\Tony\Documents\SerialPortUI\Embled\SerialPortUI\SerialPortUI\bin\Debug\SerialPortUI.pdb
+C:\Users\Tony\Documents\SerialPortUI\Embled\SerialPortUI\SerialPortUI\obj\Debug\SerialPortUI.csprojResolveAssemblyReference.cache
+C:\Users\Tony\Documents\SerialPortUI\Embled\SerialPortUI\SerialPortUI\obj\Debug\SerialPortUI.Form1.resources
+C:\Users\Tony\Documents\SerialPortUI\Embled\SerialPortUI\SerialPortUI\obj\Debug\SerialPortUI.Properties.Resources.resources
+C:\Users\Tony\Documents\SerialPortUI\Embled\SerialPortUI\SerialPortUI\obj\Debug\SerialPortUI.csproj.GenerateResource.Cache
+C:\Users\Tony\Documents\SerialPortUI\Embled\SerialPortUI\SerialPortUI\obj\Debug\SerialPortUI.csproj.CoreCompileInputs.cache
+C:\Users\Tony\Documents\SerialPortUI\Embled\SerialPortUI\SerialPortUI\obj\Debug\SerialPortUI.exe
+C:\Users\Tony\Documents\SerialPortUI\Embled\SerialPortUI\SerialPortUI\obj\Debug\SerialPortUI.pdb
+C:\Users\Tony\Documents\SerialPortUI\Embled\SerialPortUI\SerialPortUI\obj\Debug\Interop.WMPLib.dll
+C:\Users\Tony\Documents\SerialPortUI\Embled\SerialPortUI\SerialPortUI\obj\Debug\SerialPortUI.csproj.ResolveComReference.cache
