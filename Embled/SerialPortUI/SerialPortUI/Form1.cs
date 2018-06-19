@@ -313,5 +313,11 @@ namespace SerialPortUI
 
             wmp.settings.volume = Convert.ToInt32(lbVolume.Text);
         }
+        
+        private void lbMusicList_DoubleClick(object sender, EventArgs e)
+        {
+            Stop();
+            PlayPause();
+        }
     }
 }
