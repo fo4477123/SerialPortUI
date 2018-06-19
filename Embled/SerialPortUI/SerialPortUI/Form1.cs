@@ -11,12 +11,14 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TagLib;
 
 namespace SerialPortUI
 {
     public partial class Form1 : Form
     {
         private WMPLib.WindowsMediaPlayer wmp;
+       
         private int playPause = 0;
         Dictionary<string, string> dicMusicPath;
         
@@ -146,7 +148,7 @@ namespace SerialPortUI
                     string[] files = Directory.GetFiles(fbd.SelectedPath);
 
                     string[] unwantedExtensions = { ".mp3"}; // you can extend it  
-                    StringCollection col = new StringCollection();
+                    System.Collections.Specialized.StringCollection col = new System.Collections.Specialized.StringCollection();
                     foreach (string file in files)
                     {
                         string ext = Path.GetExtension(file);
@@ -207,7 +209,7 @@ namespace SerialPortUI
         {
             if (lbMusicList.Items.Count == 0)
                 return;
-
+            
             playPause = playPause == 0 ? 1 : 0;
 
             if (playPause == 1)
@@ -224,11 +226,18 @@ namespace SerialPortUI
                     wmp.settings.volume = Convert.ToInt32(lbVolume.Text);
                     wmp.controls.play();
                 }
-
+                var file = TagLib.File.Create(wmp.URL);
+                if (file.Tag.Pictures.Length >= 1)
+                {
+                    var bin = (byte[])(file.Tag.Pictures[0].Data.Data);
+                    pbMusic.Image = Image.FromStream(new MemoryStream(bin)).GetThumbnailImage(100, 100, null, IntPtr.Zero);
+                }
                 timerCheckDuration.Enabled = true;
             }
             else
             {
+
+
                 pbPlayPause.Image = Image.FromFile("../../Pic/play-button.png");
                 wmp.controls.pause();
                 timerCheckDuration.Enabled = false;
@@ -250,6 +259,12 @@ namespace SerialPortUI
             wmp.URL = dicMusicPath[lbMusicList.SelectedItem.ToString()];
             wmp.settings.volume = Convert.ToInt32(lbVolume.Text);
             wmp.controls.play();
+            var file = TagLib.File.Create(wmp.URL);
+            if (file.Tag.Pictures.Length >= 1)
+            {
+                var bin = (byte[])(file.Tag.Pictures[0].Data.Data);
+                pbMusic.Image = Image.FromStream(new MemoryStream(bin)).GetThumbnailImage(100, 100, null, IntPtr.Zero);
+            }
         }
 
         private void pbPrevious_Click(object sender, EventArgs e)
@@ -267,6 +282,12 @@ namespace SerialPortUI
             wmp.URL = dicMusicPath[lbMusicList.SelectedItem.ToString()];
             wmp.settings.volume = Convert.ToInt32(lbVolume.Text);
             wmp.controls.play();
+            var file = TagLib.File.Create(wmp.URL);
+            if (file.Tag.Pictures.Length >= 1)
+            {
+                var bin = (byte[])(file.Tag.Pictures[0].Data.Data);
+                pbMusic.Image = Image.FromStream(new MemoryStream(bin)).GetThumbnailImage(100, 100, null, IntPtr.Zero);
+            }
         }
 
         private void pbStop_Click(object sender, EventArgs e)
