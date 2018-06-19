@@ -245,6 +245,7 @@
             this.lbMusicList.Size = new System.Drawing.Size(202, 184);
             this.lbMusicList.TabIndex = 15;
             this.lbMusicList.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            this.lbMusicList.DoubleClick += new System.EventHandler(this.lbMusicList_DoubleClick);
             // 
             // lbCurrent
             // 
